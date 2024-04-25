@@ -1,0 +1,9 @@
+{
+	"results":[
+		{"name":"Ganesh","id":"Aum028","email":"ganesh@aumento.com","zip":"246765","city":"mumbai","gender":0,"state":"MH"},
+		{"name":"Nishi","id":"Aum022","email":"nishi@aumento.com","zip":"983733","city":"pune","gender":1,"state":"MH"},
+		{"name":"Parin","id":"Aum001","email":"parin@aumento.com","zip":"98475","city":"surat","gender":0,"state":"GJ"}
+	
+		
+		]
+}

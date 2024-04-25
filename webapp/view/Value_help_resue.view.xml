@@ -1,0 +1,38 @@
+<mvc:View controllerName="valuehelpresue.valuehelpresue.controller.Value_help_resue"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" 
+	xmlns:core="sap.ui.core">
+    <App>
+		<pages>
+			<Page title="{i18n>title}" class="sapUiSizeCompact">
+				<content>
+						<f:SimpleForm layout="ResponsiveGridLayout" id="EmpForm" emptySpanL="4" emptySpanM="4" emptySpanXL="4" emptySpanS="0" labelSpanL="3"
+							labelSpanM="3" labelSpanXL="3" labelSpanS="12" editable="true">
+							<f:content>
+								<Label text="Employee ID" design="Bold" ></Label>
+								<Input value="{formModel>id}" id="EmpId" valueHelpRequest="onValueHelp" showValueHelp="true"></Input>
+								<Label text="Employee Name" design="Bold"></Label>
+								<Input value="{formModel>name}" id="EmpName" valueHelpRequest="onValueHelp" showValueHelp="true"></Input>
+								<Label text="Employee Email" design="Bold"></Label>
+								<Input value="{formModel>email}" id="EmpMail" valueHelpRequest="onValueHelp" showValueHelp="true"></Input>
+								<Label text="Employee Zip/City" design="Bold"></Label>
+								<Input value="{formModel>zip}"></Input>
+								<Input value="{formModel>city}"></Input>
+								<Label text="Emp Gender" design="Bold"></Label>
+								<RadioButtonGroup columns="2" id="Rb" selectedIndex="{formModel>gender}">
+									<RadioButton text="Male"></RadioButton>
+									<RadioButton text="Female"></RadioButton>
+								</RadioButtonGroup>
+								<Label text="State" design="Bold"></Label>
+								<ComboBox selectedKey="{formModel>state}" id="Cmbo">
+									<core:Item text="Maharashtra" key="MH"></core:Item>
+									<core:Item text="Gujrat" key="GJ"></core:Item>
+									<core:Item text="Goa" key="GA"></core:Item>
+								</ComboBox>
+							</f:content>
+						</f:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
